@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleMen - Premium Men's Clothing</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Hero section */
+        main section:first-child {
+            background-image: url('clothes.jpg'); /* Replace with your image path */
+            /* Header styles */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            top: 0;
+            z-index: 1000;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        main section:first-child h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        main section:first-child a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        main section:first-child a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Categories section */
+        main section:nth-child(2) {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        main section:nth-child(2) h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        main section:nth-child(2) > div {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        main section:nth-child(2) article {
+            text-align: center;
+        }
+
+        main section:nth-child(2) img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        /* New Arrivals section */
+        main section:nth-child(3) {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        main section:nth-child(3) h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        main section:nth-child(3) > div {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        main section:nth-child(3) article {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main section:nth-child(3) img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        main section:nth-child(3) p {
+            color: #2c3e50;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        main section:nth-child(3) a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        main section:nth-child(3) a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Newsletter section */
+        main section:nth-child(4) {
+            background-color: #f8f9fa;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        main section:nth-child(4) form {
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        main section:nth-child(4) input[type="email"] {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        main section:nth-child(4) button {
+            padding: 0.8rem 2rem;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        main section:nth-child(4) button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        footer > div:first-child {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        footer h3 {
+            margin-bottom: 1rem;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #3498db;
+        }
+
+        footer > div:last-child {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            main section:first-child h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            main section:first-child {
+                padding: 2rem 1rem;
+            }
+
+            main section:nth-child(2),
+            main section:nth-child(3) {
+                padding: 0 1rem;
+            }
+
+            footer {
+                padding: 2rem 1rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1>StyleMen</h1>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <div>
+                <a href="/cart">Cart (0)</a>
+                <a href="/account">My Account</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section>
+            <h2>Summer Collection 2024</h2>
+            <p>Discover our latest collection of premium menswear</p>
+            <a href="/shop/summer-collection">Shop Now</a>
+        </section>
+
+        <!-- Categories Section -->
+        <section>
+            <h2>Shop by Category</h2>
+            <div>
+                <article>
+                    <img src="clothes2.jpg" alt="T-Shirts Category">
+                    <h3>T-Shirts</h3>
+                    <a href="/shop/t-shirts">Browse T-Shirts</a>
+                </article>
+                <article>
+                    <img src="clothes.jpg" alt="Shirts Category">
+                    <h3>Shirts</h3>
+                    <a href="/shop/shirts">Browse Shirts</a>
+                </article>
+                <article>
+                    <img src="clothes1.jpg" alt="Pants Category">
+                    <h3>Pants</h3>
+                    <a href="/shop/pants">Browse Pants</a>
+                </article>
+                <article>
+                    <img src="clothes2.jpg" alt="Accessories Category">
+                    <h3>Accessories</h3>
+                    <a href="/shop/accessories">Browse Accessories</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section>
+            <h2>New Arrivals</h2>
+            <div>
+                <article>
+                    <img src="clothes.jpg" alt="Classic White Oxford Shirt">
+                    <h3>Classic White Oxford Shirt</h3>
+                    <p>$89.99</p>
+                    <a href="/product/classic-white-oxford">View Details</a>
+                </article>
+                <article>
+                    <img src="clothes1.jpg" alt="Slim Fit Chinos">
+                    <h3>Slim Fit Chinos</h3>
+                    <p>$69.99</p>
+                    <a href="/product/slim-fit-chinos">View Details</a>
+                </article>
+                <article>
+                    <img src="clothes2.jpg" alt="Premium Leather Belt">
+                    <h3>Premium Leather Belt</h3>
+                    <p>$49.99</p>
+                    <a href="/product/premium-leather-belt">View Details</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section>
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for exclusive offers and updates</p>
+            <form>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <section>
+                <h3>Contact Us</h3>
+                <address>
+                    123 Fashion Street<br>
+                    New York, NY 10001<br>
+                    Email: contact@stylemen.com<br>
+                    Phone: (555) 123-4567
+                </address>
+            </section>
+
+            <section>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                    <li><a href="/shipping">Shipping Information</a></li>
+                    <li><a href="/returns">Returns & Exchanges</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://facebook.com/stylemen">Facebook</a></li>
+                    <li><a href="https://instagram.com/stylemen">Instagram</a></li>
+                    <li><a href="https://twitter.com/stylemen">Twitter</a></li>
+                    <li><a href="https://pinterest.com/stylemen">Pinterest</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div>
+            <p>&copy; 2024 StyleMen. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
